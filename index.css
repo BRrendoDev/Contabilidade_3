@@ -142,7 +142,7 @@ body {
     text-align: justify;
 }
 /* Media Para Celular */
-@media(max-width:350px){
+@media(max-width:400px){
     body {
         font-family: 'Open Sans', sans-serif;
         padding: 0%;
@@ -292,6 +292,6 @@ body {
 }
 .content .txt_content{
     text-align: justify;
-    font-size: 12px;
+    font-size: 15px;
 }
 }
