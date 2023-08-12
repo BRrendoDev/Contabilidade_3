@@ -1,0 +1,246 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: "title title title"
+        "main main main"
+        "main main main";
+
+
+}
+
+.top {
+    grid-area: title;
+    background: rgb(47, 81, 250);
+    background: linear-gradient(90deg, rgba(47, 81, 250, 1) 18%, rgba(5, 46, 245, 1) 29%, rgba(0, 64, 189, 1) 100%);
+    box-shadow: 1px 1px 20px rgb(126, 125, 125);
+    position: relative;
+}
+
+.top .roadmap {
+    position: absolute;
+    margin-right: 10px;
+    width: fit-content;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.roadmap a {
+    color: white;
+}
+
+.top .title {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title .txt_title {
+    border: 1px solid white;
+    border-radius: 2px 2px;
+    padding: 0px 20px 0px 20px;
+}
+
+.title .creator {
+    position: absolute;
+    margin-left: 10px;
+    width: fit-content;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.creator a {
+    text-decoration: none;
+    color: rgb(78, 90, 255);
+    transition: all 0.3s;
+}
+
+.creator a:hover {
+    color: white;
+    text-shadow: 1px 1px 10px white;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: inherit;
+}
+
+.main .title_all {
+    color: rgb(78, 90, 255);
+    font-size: 25px;
+}
+
+
+.main .content {
+    width: 700px;
+    display: flex;
+    margin-bottom: 45px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 5px 5px;
+    padding: 20px;
+}
+
+.image {
+    border-radius: 5px 5px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image .txt_image {
+    color: rgb(148, 151, 151);
+}
+
+.content .txt_content {
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Media Para Celular */
+@media (max-width:400px) {
+
+    .all {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: "title title title"
+            "main main main"
+            "main main main";
+
+    }
+
+    .top {
+        grid-area: title;
+        background: rgb(47, 81, 250);
+        background: linear-gradient(90deg, rgba(47, 81, 250, 1) 18%, rgba(5, 46, 245, 1) 29%, rgba(0, 64, 189, 1) 100%);
+        box-shadow: 1px 1px 20px rgb(126, 125, 125);
+        position: relative;
+    }
+
+    .top .roadmap {
+        position: absolute;
+        margin-right: 10px;
+        width: fit-content;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        display: none;
+    }
+
+    .roadmap a {
+        font-size: 12px;
+        color: white;
+    }
+
+    .top .title {
+        height: 15vh;
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        color: white;
+    }
+
+    .title .txt_title {
+        border: 1px solid white;
+        border-radius: 2px 2px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .title .creator {
+        display: flex;
+        position: absolute;
+        width: fit-content;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .creator a {
+        text-decoration: none;
+        color: rgb(78, 90, 255);
+        transition: all 0.3s;
+    }
+
+    .creator a:hover {
+        color: white;
+        text-shadow: 1px 1px 10px white;
+    }
+
+    .main .title_all {
+        font-size: 10px;
+    }
+
+    .main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: inherit;
+
+    }
+
+    .main .image {
+        display: flex;
+        margin: 30px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image img {
+        width: 300px;
+    }
+
+    .image img {
+        border-radius: 5px 5px;
+    }
+
+    .image .txt_image {
+        font-size: 12px;
+        color: rgb(148, 151, 151);
+    }
+
+    .main .content {
+        width: 320px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        flex-direction: column;
+        box-shadow: none;
+        border-radius: 5px 5px;
+    }
+
+    .main .title_content {
+        font-size: 10px;
+    }
+
+    .content .txt_content {
+        margin: 15px;
+        padding: 10px;
+        text-align: justify;
+        font-size: 12px;
+    }
+}
