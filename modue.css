@@ -50,6 +50,10 @@ body {
     border-radius: 2px 2px;
     padding: 0px 20px 0px 20px;
 }
+.title .txt_title a{
+    text-decoration: none;
+    color: white;
+}
 
 .title .creator {
     position: absolute;
@@ -200,6 +204,11 @@ body {
         border: 1px solid white;
         border-radius: 2px 2px;
         padding: 0px 20px 0px 20px;
+        color: white;
+    }
+    .title .txt_title a{
+        text-decoration: none;
+        color: white;
     }
 
     .title .creator {
