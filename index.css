@@ -183,7 +183,7 @@ body {
 
 .top .title {
     height: 15vh;
-    font-size: 8px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,12 +201,13 @@ body {
     display: flex;
     position: absolute;
     width: fit-content;
-    top: 85%;
-    left: 50%;
+    top: 90%;
+    left: 48%;
     transform: translate(-50%,-50%);
 }
 .creator a {
     text-decoration: none;
+    font-size: 7px;
     color: rgb(78, 90, 255);
     transition: all 0.3s;
 }
@@ -233,10 +234,9 @@ body {
     gap: 10px;
 }
 .image img{
-    width:300px;
-}
-
-.image img {
+    width:335px;
+    margin: 0;
+    padding: 0;
     border-radius: 5px 5px;
 }
 

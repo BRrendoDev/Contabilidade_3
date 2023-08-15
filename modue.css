@@ -115,6 +115,40 @@ body {
     padding: 10px;
 }
 
+.txt_final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.letter{
+    font-size: 30px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.buttons button{
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+    background: none;
+    border: 2px solid rgb(78, 90, 255);
+    border-radius: 5px;
+    color: rgb(10, 20, 155);
+
+    transition: all 0.2s;
+}
+.buttons button:hover{
+    background-color: rgb(78, 90, 255);  
+    box-shadow: 1px 1px 10px rgb(78, 90, 255);
+    text-shadow: 1px 1px 20px white;
+    color: #fff;
+}
 /* Media Para Celular */
 @media (max-width:400px) {
 
@@ -154,7 +188,7 @@ body {
 
     .top .title {
         height: 15vh;
-        font-size: 8px;
+        font-size: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -172,12 +206,13 @@ body {
         display: flex;
         position: absolute;
         width: fit-content;
-        top: 85%;
-        left: 50%;
+        top: 90%;
+        left: 48%;
         transform: translate(-50%, -50%);
     }
 
     .creator a {
+        font-size: 7px;
         text-decoration: none;
         color: rgb(78, 90, 255);
         transition: all 0.3s;
@@ -211,7 +246,7 @@ body {
     }
 
     .image img {
-        width: 300px;
+        width: 340px;
     }
 
     .image img {
@@ -224,7 +259,7 @@ body {
     }
 
     .main .content {
-        width: 320px;
+        width: 355px;
         display: flex;
         align-items: center;
         margin: 10px;
@@ -238,9 +273,31 @@ body {
     }
 
     .content .txt_content {
-        margin: 15px;
+        margin-bottom: 0px;
         padding: 10px;
         text-align: justify;
         font-size: 15px;
+    }
+    .txt_content img{
+    width: 320px;
+}
+    .buttons button{
+        cursor: pointer;
+        width: 140px;
+        height: 35px;
+        padding: 5px;
+        font-size: 15px;
+        background: none;
+        border: 2px solid rgb(78, 90, 255);
+        border-radius: 5px;
+        color: rgb(10, 20, 155);
+    
+        transition: all 0.2s;
+    }
+    .buttons button:hover{
+        background-color: rgb(78, 90, 255);  
+        box-shadow: 1px 1px 10px rgb(78, 90, 255);
+        text-shadow: 1px 1px 20px white;
+        color: #fff;
     }
 }
